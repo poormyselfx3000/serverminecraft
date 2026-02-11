@@ -1,0 +1,66 @@
+a741e123-60a3-46a5-b174-c2dd0231c1f6:
+  contents:
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+524276cb-1e5c-4fca-96c5-ea03e8d4856c:
+  contents:
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:diamond
+    count: 8
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:iron_ingot
+    count: 34
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:gold_ingot
+    count: 4
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:copper_ingot
+    count: 50
+    schema_version: 1
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+050901ff-a6bc-41c7-85ab-16ea7d86d364:
+  contents:
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:diamond
+    count: 16
+    schema_version: 1
+  - ==: org.bukkit.inventory.ItemStack
+    DataVersion: 4671
+    id: minecraft:iron_ingot
+    count: 15
+    schema_version: 1
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null

@@ -1,0 +1,982 @@
+[03:54:06] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.1+8-LTS; Microsoft Microsoft-12574222) on Linux 6.8.0-1030-azure (amd64)
+[03:54:06] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-111-main@302c47c (2026-02-07T22:59:49Z) for Minecraft 1.21.11
+[03:54:07] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[03:54:08] [ServerMain/INFO]: [PluginInitializerManager] Initialized 8 plugins
+[03:54:08] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (8):
+ - Brutal_Nightmare (5.2), ExpendableBackpacks (1.0.0), FokusAPI (3.3), Geyser-Spigot (2.9.3-SNAPSHOT), PatPatPlugin (1.2.1+017dd38), Reactify (1.1.b1), ViaBackwards (5.7.1), ViaVersion (5.7.1)
+[03:54:15] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[03:54:20] [ServerMain/INFO]: Loaded 1470 recipes
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/nosleep_disable_u14uhdzhvt0
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Incorrect argument for command at position 9: gamerule <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Incorrect argument for command at position 9: gamerule <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ability_bsvy6a
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.knockback_resistance' of type 'minecraft:attribute' at position 51: ...resistance<--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.knockback_resistance' of type 'minecraft:attribute' at position 51: ...resistance<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_spawn_qnjeenj
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ability_tbs572jgoy4
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_hardattrb_4hhpy2udsjy
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.attack_knockback' of type 'minecraft:attribute' at position 37: ..._knockback<--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.attack_knockback' of type 'minecraft:attribute' at position 37: ..._knockback<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_hardattrb_i0m6vx
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.follow_range' of type 'minecraft:attribute' at position 43: ...llow_range<--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.follow_range' of type 'minecraft:attribute' at position 43: ...llow_range<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_doubler_imsc70zl14q
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Incorrect argument for command at position 123: ...bler] run <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Incorrect argument for command at position 123: ...bler] run <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_swapper_on5c
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ability_vwgoottnoq
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function fokus:nxf/_ignored_e3v5i90kmw
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function fokus:nxf/d0x2m
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Expected whitespace to end one argument, but found trailing data at position 18: ... function <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Expected whitespace to end one argument, but found trailing data at position 18: ... function <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_summon_qupolm2
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_hardattrb_sacf0661xfo
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.movement_speed' of type 'minecraft:attribute' at position 35: ...ment_speed<--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.movement_speed' of type 'minecraft:attribute' at position 35: ...ment_speed<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ssmob_lovx4r36jg
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_swapper_hl8bne9
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_hardattrb_s5lbyg538bm
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.movement_speed' of type 'minecraft:attribute' at position 35: ...ment_speed<--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.movement_speed' of type 'minecraft:attribute' at position 35: ...ment_speed<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ability_bw3z
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ability_j9cjgymok
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_shoot_h1tsl0k6x
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ability_enlvsf99tg
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_swapper_z85yjm8f7fx
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_spider_r6m2i
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown block type 'minecraft:grass' at position 23: ...ock ~ ~ ~ <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown block type 'minecraft:grass' at position 23: ...ock ~ ~ ~ <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_hardattrb_fw2l9
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.attack_speed' of type 'minecraft:attribute' at position 33: ...tack_speed<--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.attack_speed' of type 'minecraft:attribute' at position 33: ...tack_speed<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_move_l9arm
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Invalid or unknown entity type 'minecraft:boat' at position 31: ...s @e[type=<--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Invalid or unknown entity type 'minecraft:boat' at position 31: ...s @e[type=<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ability_6456
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ability_ockg7
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.knockback_resistance' of type 'minecraft:attribute' at position 51: ...resistance<--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.knockback_resistance' of type 'minecraft:attribute' at position 51: ...resistance<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_swapper_wfhu3gy
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ability_28452vyet76
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ssmob_vjzl4xg16du
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_hardattrb_oyzzrg1h1
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.knockback_resistance' of type 'minecraft:attribute' at position 41: ...resistance<--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.knockback_resistance' of type 'minecraft:attribute' at position 41: ...resistance<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_hardattrb_girv38u8
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.max_health' of type 'minecraft:attribute' at position 31: ...max_health<--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.max_health' of type 'minecraft:attribute' at position 31: ...max_health<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_hardattrb_qkf2
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.follow_range' of type 'minecraft:attribute' at position 43: ...llow_range<--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:generic.follow_range' of type 'minecraft:attribute' at position 43: ...llow_range<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_the_n2gg
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_summon_vuk4
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:boat' of type 'minecraft:entity_type' at position 57: ...craft:boat<--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Can't find element 'minecraft:boat' of type 'minecraft:entity_type' at position 57: ...craft:boat<--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_summon_17u3yxfda4k
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_spawn_oy9tc0o
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function fokus:nxf/97jrp
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown criterion 'minecraft.custom:minecraft.play_one_minute' at position 33: ...dd fk.ptm <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown criterion 'minecraft.custom:minecraft.play_one_minute' at position 33: ...dd fk.ptm <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ability_uevkd342zz
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ability_3gvg5
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_summon_itkb6x8
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ability_ub8n
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/nosleep_tyobkc3819
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Incorrect argument for command at position 9: gamerule <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Incorrect argument for command at position 9: gamerule <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/ERROR]: Failed to load function cw:nxf/_ignored_ssmob_wqwk86s0i8l
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:359) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:364) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1791) ~[?:?]
+	at net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$prepareTasks$0(SimpleReloadInstance.java:68) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1750) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.compute(ForkJoinTask.java:1742) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1659) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:511) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1450) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2019) ~[?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 1: Unknown or incomplete command. See below for error at position 0: <--[HERE]
+	at net.minecraft.commands.functions.CommandFunction.fromLines(CommandFunction.java:84) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at net.minecraft.server.ServerFunctionLibrary.lambda$reload$3(ServerFunctionLibrary.java:88) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?]
+	... 8 more
+[03:54:20] [ServerMain/INFO]: Loaded 1584 advancements
+[03:54:20] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[03:54:21] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 850.2ms
+[03:54:21] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[03:54:21] [Server thread/INFO]: Loading properties
+[03:54:22] [Server thread/INFO]: This server is running Paper version 1.21.11-111-main@302c47c (2026-02-07T22:59:49Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[03:54:22] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[03:54:22] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[03:54:22] [Server thread/INFO]: Using 4 threads for Netty based IO
+[03:54:24] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[03:54:25] [Server thread/INFO]: Default game type: SURVIVAL
+[03:54:25] [Server thread/INFO]: Generating keypair
+[03:54:25] [Server console handler/WARN]: [org.jline] Failed to load history
+java.lang.IllegalArgumentException: Bad history file syntax! The history file `.console_history` may be an older history: please remove it or use a different history file.
+	at org.jline.reader.impl.history.DefaultHistory.addHistoryLine(DefaultHistory.java:181) ~[jline-reader-3.20.0.jar:?]
+	at org.jline.reader.impl.history.DefaultHistory.addHistoryLine(DefaultHistory.java:165) ~[jline-reader-3.20.0.jar:?]
+	at org.jline.reader.impl.history.DefaultHistory.lambda$load$0(DefaultHistory.java:86) ~[jline-reader-3.20.0.jar:?]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803) ~[?:?]
+	at org.jline.reader.impl.history.DefaultHistory.load(DefaultHistory.java:86) ~[jline-reader-3.20.0.jar:?]
+	at org.jline.reader.impl.history.DefaultHistory.attach(DefaultHistory.java:69) ~[jline-reader-3.20.0.jar:?]
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:603) ~[jline-reader-3.20.0.jar:?]
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:468) ~[jline-reader-3.20.0.jar:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:158) ~[terminalconsoleappender-1.3.0.jar:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:141) ~[terminalconsoleappender-1.3.0.jar:?]
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:198) ~[paper-1.21.11.jar:1.21.11-111-302c47c]
+[03:54:25] [Server thread/INFO]: Starting Minecraft server on *:25565
+[03:54:25] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[03:54:25] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[03:54:26] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.7.1
+[03:54:26] [Server thread/INFO]: [ViaVersion] ViaVersion 5.7.1 is now loaded. Registering protocol transformers and injecting...
+[03:54:27] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading block connection mappings ...
+[03:54:28] [Via-Mappingloader-1/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[03:54:28] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[03:54:28] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[03:54:30] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.7.1
+[03:54:30] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.9.3-SNAPSHOT
+[03:54:30] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[03:54:30] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[03:54:30] [Server thread/INFO]: [FokusAPI] Loading server plugin FokusAPI v3.3
+[03:54:30] [Server thread/INFO]: [Reactify] Loading server plugin Reactify v1.1.b1
+[03:54:30] [Server thread/INFO]: [PatPatPlugin] Loading server plugin PatPatPlugin v1.2.1+017dd38
+[03:54:30] [Server thread/INFO]: [ExpendableBackpacks] Loading server plugin ExpendableBackpacks v1.0.0
+[03:54:30] [Server thread/INFO]: [Brutal_Nightmare] Loading server plugin Brutal_Nightmare v5.2
+[03:54:30] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[03:54:30] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[03:54:30] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[03:54:30] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[03:54:30] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[03:54:30] [Server thread/INFO]: Preparing level "world"
+[03:54:30] [Server thread/INFO]: [ca.spottedleaf.moonrise.common.util.MoonriseConstants] NUMA enable flag is not set; however there is NUMA interaction support for this OS.
+[03:54:30] [Server thread/INFO]: [ca.spottedleaf.moonrise.common.util.MoonriseConstants] Detected 1 NUMA nodes.
+[03:54:31] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[03:54:31] [Server thread/INFO]: Prepared spawn area in 0 ms
+[03:54:31] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[03:54:31] [Server thread/INFO]: Prepared spawn area in 2 ms
+[03:54:31] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[03:54:31] [Server thread/INFO]: Prepared spawn area in 2 ms
+[03:54:31] [Server thread/INFO]: Done preparing level "world" (1.112s)
+[03:54:31] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.7.1
+[03:54:32] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21.11 (774)
+[03:54:32] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.7.1
+[03:54:32] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.3-SNAPSHOT
+[03:54:35] [Server thread/INFO]: [FokusAPI] Enabling FokusAPI v3.3
+[03:54:35] [Server thread/INFO]: [FokusAPI] DatapackDownloader Plugin Enabled!
+[03:54:35] [Server thread/INFO]: [FokusAPI] Datapack already exists. Skipping download.
+[03:54:35] [Server thread/INFO]: [Reactify] Enabling Reactify v1.1.b1
+[03:54:35] [Server thread/INFO]: [Reactify] DatapackDownloader Plugin Enabled!
+[03:54:35] [Server thread/INFO]: [Reactify] Datapack already exists. Skipping download.
+[03:54:35] [Server thread/INFO]: [PatPatPlugin] Enabling PatPatPlugin v1.2.1+017dd38
+[03:54:35] [Server thread/INFO]: [patpat-plugin] Plugin started
+[03:54:35] [Server thread/INFO]: [ExpendableBackpacks] Enabling ExpendableBackpacks v1.0.0
+[03:54:35] [Server thread/INFO]: [ExpendableBackpacks] Loaded data for 3 backpacks
+[03:54:35] [Server thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[03:54:36] [Server thread/INFO]: [ExpendableBackpacks] Expendable Backpacks has been enabled!
+[03:54:36] [Server thread/INFO]: [ExpendableBackpacks] Features: 8 Tiers, Placeable Blocks, Enderpack Support
+[03:54:36] [Server thread/INFO]: [Brutal_Nightmare] Enabling Brutal_Nightmare v5.2
+[03:54:36] [Server thread/INFO]: [Brutal_Nightmare] DatapackDownloader Plugin Enabled!
+[03:54:36] [Server thread/INFO]: [Brutal_Nightmare] Datapack already exists. Skipping download.
+[03:54:36] [Server thread/INFO]: [spark] Starting background profiler...
+[03:54:38] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[03:54:38] [Server thread/INFO]: [Geyser-Spigot] 
+[03:54:38] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.9.3-b1067 (git-master-49d2497)
+[03:54:38] [Server thread/INFO]: [Geyser-Spigot] 
+[03:54:38] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[03:54:46] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[03:54:47] [Server thread/INFO]: [Geyser-Spigot] Done (8.179s)! Run /geyser help for help!
+[03:54:47] [Server thread/INFO]: Running delayed init tasks
+[03:54:47] [Server thread/INFO]: Done (44.343s)! For help, type "help"
+[03:54:47] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[03:54:47] [Paper Async Task Handler Thread - 1/INFO]: *** Currently you are 2 build(s) behind ***
+[03:54:47] [Paper Async Task Handler Thread - 1/INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***
+[03:54:52] [User Authenticator #0/INFO]: UUID of player Hisashi302 is ed589cda-2c72-3738-8eeb-3bd7045f2656
+[03:54:57] [Server thread/INFO]: Hisashi302 joined the game
+[03:54:57] [Server thread/INFO]: Hisashi302[/127.33.71.242:36685] logged in with entity id 8 at ([world]602.8231294957468, 68.0, -33.4700953189222)
+[03:55:50] [Server thread/INFO]: Hisashi302 lost connection: Disconnected
+[03:55:50] [Server thread/INFO]: Hisashi302 left the game
+[03:57:25] [User Authenticator #1/INFO]: UUID of player pooryou is e04a6964-268c-357b-98be-663cccaa849f
+[03:57:27] [Server thread/INFO]: pooryou joined the game
+[03:57:27] [Server thread/INFO]: pooryou[/127.200.232.227:33055] logged in with entity id 251 at ([world]1079.1886350399927, 70.0, -43.76438854189699)
+[03:57:41] [Server thread/INFO]: pooryou issued server command: /tp pooryou
+[03:57:41] [Server thread/INFO]: [pooryou: Teleported pooryou to pooryou]
+[04:02:09] [Server thread/INFO]: pooryou issued server command: /kill pooryou
+[04:02:09] [Server thread/INFO]: pooryou was killed
+[04:02:09] [Server thread/INFO]: [pooryou: Killed pooryou]
+[04:02:34] [Server thread/INFO]: pooryou issued server command: /time set day
+[04:02:34] [Server thread/INFO]: [pooryou: Set the time to 1000]
+[04:05:40] [Server thread/INFO]: pooryou lost connection: Disconnected
+[04:05:41] [Server thread/INFO]: pooryou left the game
+[04:05:59] [Server thread/INFO]: Stopping the server
+[04:05:59] [Server thread/INFO]: Stopping server
+[04:05:59] [Server thread/INFO]: [Brutal_Nightmare] Disabling Brutal_Nightmare v5.2
+[04:05:59] [Server thread/INFO]: [ExpendableBackpacks] Disabling ExpendableBackpacks v1.0.0
+[04:05:59] [Server thread/INFO]: [ExpendableBackpacks] Saving all backpack inventories...
+[04:05:59] [Server thread/INFO]: [ExpendableBackpacks] Saved 0 backpack inventories
+[04:05:59] [Server thread/INFO]: [ExpendableBackpacks] Expendable Backpacks has been disabled. All data saved successfully.
+[04:05:59] [Server thread/INFO]: [PatPatPlugin] Disabling PatPatPlugin v1.2.1+017dd38
+[04:05:59] [Server thread/INFO]: [Reactify] Disabling Reactify v1.1.b1
+[04:05:59] [Server thread/INFO]: [FokusAPI] Disabling FokusAPI v3.3
+[04:05:59] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.9.3-SNAPSHOT
+[04:05:59] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[04:06:00] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[04:06:00] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.7.1
+[04:06:00] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.7.1
+[04:06:00] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[04:06:00] [Server thread/INFO]: Saving players
+[04:06:00] [Server thread/INFO]: Saving worlds
+[04:06:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world' in 0.11s
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[04:06:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[04:06:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[04:06:00] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[04:06:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[04:06:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[04:06:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[04:06:00] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[04:06:00] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[04:06:00] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[04:06:00] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[04:06:00] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
